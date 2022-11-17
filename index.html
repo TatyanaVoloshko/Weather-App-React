@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Weather App</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+   
+    <div class="weather">  
+    <div class="weather-app">
+        <form class="Request-button">
+            <div class="request">
+                <input class="city" 
+                type="text" placeholder="Type a city..." id="cityName">
+                <button class="search">Search</button>
+            </div>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-6">
+      <h1 id="city"></h1>
+             <ul>
+                <li><span class="card-title" id="date"></span>, <span id="description"></span></li>
+                <li>Humidity: <span id="humidity"></span>%, Wind: <span id="wind"></span> km/h</li>
+              </ul> 
+            </div>
+          <div class="col-6">
+            <div class="clearfix weather-temperature">
+            <img src="" alt="clear" id="icon" class="float-left" />
+            <div class="float-left">
+            <strong id="temperature"></strong>
+            <span class="units"> 
+              <a href="#" id="celsius-link" class="active">°C</a> | 
+              <a href="#" id="fahrenheit-link">°F</a>
+            </span>
+          </div>
+        </div>
+        
+     
+     <script src="src/index.js">
+
+     </script>
+</body>
+</html>
